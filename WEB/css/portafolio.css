@@ -116,7 +116,7 @@ section#main{
      padding-left: 10%;
      padding-right: 10%;
  }
- #about .col #contacto .col{
+ #about .col, #contacto .col{
      float: left;
      width: 50%;
      text-align: justify;
