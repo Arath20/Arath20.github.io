@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Festive&family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+<link href="./css/all.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header>
@@ -18,16 +21,21 @@
      <nav class="item">
      <ul>
          <li>
-             <a href="#">Inicio</a>
+             <a href="#main" data-scroll>Inicio</a>
          </li>
          <li>
-            <a href="#">Portafolio</a>
+            <a href="#proyecto" data-scroll>Portafolio</a>
         </li>
         <li>
-            <a href="#">Contacto</a>
+            <a href="#contacto" data-scroll>Contacto</a>
         </li>
         <li>
-            <a href="#">Sobre mi</a>
+            <a href="#about" data-scroll>Sobre mi</a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fas fa-bars"></i>
+            </a>
         </li>
      </ul>
     </nav>
@@ -39,10 +47,10 @@
           <source src="./Img/playa.mp4" type="video/mp4">
          </video>
      <div id="overlay">
-         <h2>
+         <h2 data-aos="fade-in">
              Bienvenidos a mi portafolio
          </h2>
-         <h3>Arath Salazar <br>
+         <h3 data-aos="fade-left">Arath Salazar <br>
              Estudiante <br>
              <a href="#" class="btn btn-primary">Contactar</a>
         </h3>
@@ -51,7 +59,7 @@
   <section id="about">
       <h2>About Me</h2>
       <div class="col">
-          <img id="per" src="./Img/personaje.png">
+          <img id="per" src="./Img/personaje.png" data-aos="flip-left">
       </div>
       <div class="col">
           <h2>Arath Salazar</h2>
@@ -105,7 +113,7 @@
 
   <section id="contacto">
       <div class="col">
-          formulario
+          <h5>formulario <i class="fas fa-user"></i></h5>
           <fieldset id="formulario">
      <legend>Información Personal</legend>
      Nombre: <input name='nombre' type='text' tabindex='1'>
@@ -128,11 +136,16 @@
   <div id="final">
       <h5>Arath Salazar 2021 <br> El que haga plagio va pal bote</h5>
   </div>
-  <form>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    AOS.init();
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 
-    
-   
-   </form>
+
+
+
 
 </body>
 </html>
