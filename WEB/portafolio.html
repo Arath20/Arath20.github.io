@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
     <link rel="stylesheet" href="./css/portafolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,7 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Festive&family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
 <link href="./css/all.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+<link rel="stylesheet" href="./css/mediaquerys.css"/>
+<link rel="stylesheet" href="./css/print.css" media="print"/>
 </head>
 <body>
     <header>
@@ -19,7 +22,7 @@
       
     </div>
      <nav class="item">
-     <ul>
+     <ul id="menuweb">
          <li>
              <a href="#main" data-scroll>Inicio</a>
          </li>
@@ -32,7 +35,9 @@
         <li>
             <a href="#about" data-scroll>Sobre mi</a>
         </li>
-        <li>
+     </ul>
+     <ul id="menumovil">
+         <li>
             <a href="">
                 <i class="fas fa-bars"></i>
             </a>

@@ -35,6 +35,9 @@ header nav{
     width: 500px;
     
 }
+header #menumovil{
+display: none;
+}
 header nav ul li{
     float: left;
     list-style: none;
@@ -115,7 +118,7 @@ section#main{
  }
  #about, #contacto{
      width: 80%;
-     height: 700px;
+     min-height: 700px;
      padding-left: 10%;
      padding-right: 10%;
  }
