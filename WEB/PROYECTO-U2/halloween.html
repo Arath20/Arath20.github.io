@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ENLACES-->
+    <link rel="stylesheet" href="./CSS/diseños.css">
+    <!--LIBRERÍAS ICONOS-->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!--LIBRERÍA ANIMACIONES-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--ESTILOS DE LETRA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!--ICONO PAGINA-->
+    <link rel="shortcut icon" href="./IMG/fantasma.png">
+    <!--QUERYS-->
+    <link rel="stylesheet" href="./CSS/mediaquerys.css"/>
+    <!--NOMBRE PRINCIPAL-->
+    <title>Halloween</title>
+</head>
+<body>
+    <header>
+        <div id="titulo" class="item">
+            <h1><a href="">
+                <i class="fas fa-skull"></i>
+            </a></h1>
+        </div>
+        <nav class="opciones">
+        <ul id="Menuw">
+            <li>
+                <a href="#main" data-scroll>Inicio</a>
+            </li>
+            <li>
+                <a href="#Info" data-scroll>Sobre Halloween</a>
+            </li>
+            <li>
+                <a href="#cuadros" data-scroll>Dulce o Truco</a>
+            </li>
+            <li>
+                <a href="#contacto" data-scroll>Contacto</a>
+            </li>
+            
+        </ul>
+        <ul id="Menum">
+            <li>
+                <a href="">
+                    <i class="fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <!--SECCIÓN DEL VIDEO-->
+    <section id="main">
+        <video autoplay muted playsinline loop preload="auto">
+            <source src="./IMG/Presentacion.mp4" type="video/mp4">
+        </video>
+            <div id="sobre">
+                <h2 data-aos="fade-right">Bienvenido a <br> HALLOWEEN</h2>
+                <h3 data-aos="fade-left">Creador: Arath Salazar <br>
+            </h3>
+            </div>
+    </section>
+    <!--SECCIÓN INFORMACIÓN-->
+    <section id="Info">
+        <div class="arañita">
+            <img id="witsi" src="./IMG/araña.png" data-aos="fade-up-right">
+        </div>
+        <div class="patas">
+            <h4 data-aos="fade-up-left">¿Qué es Halloween?</h4>
+            <p data-aos="fade-up-left">
+                Es una celebración internacional que tiene lugar el 31 de octubre, 
+                víspera de la fiesta cristiana occidental del Día de Todos los Santos.
+                Se celebra internacionalmente en la noche del 31 de octubre, sobre todo 
+                en la angloesfera, como Canadá, Estados Unidos, Irlanda o el Reino Unido, 
+                y, en menor medida, en otros lugares como España e Iberoamérica.
+            </p>
+            <p data-aos="fade-up-left">
+                Las actividades de Halloween incluyen el dulce o truco o el disfraz y el alma relacionados, 
+                asistir a fiestas de disfraces de Halloween, tallar calabazas en jack-o'-lanterns, encender hogueras,
+                menear manzanas, juegos de adivinación, hacer bromas, visitar atracciones embrujadas, contar historias 
+                que producen miedo, además de ver películas de terror.
+          </p>
+        </div>
+    </section>
+    <!--SECCIÓN CUADROS PELICULAS-->
+    <section id="cuadros">
+        <h5 id="etiqueta">Dulce o Truco</h5>
+        <p class="info2">Estas son las peliculas más vistas en fechas de halloween</p>
+        <div id="cuadro">
+        <div class="item borde">
+        <img id="imga" src="./IMG/jack.jpg">
+        <h4 id="e1">Pelicula 1</h4>
+        <h5 id="e2">El extraño mundo de Jack</h5>
+        <a href="https://pelisplus.me/pelicula/el-extrano-mundo-de-jack/">
+        <button id="boton">Ver Pelicula</button>
+        </a>
+        </div>
+        <div id="cuadro">
+        <div class="item borde">
+        <img id="imga" src="./IMG/cadaver-novia.jpg">
+        <h4 id="e1">Pelicula 2</h4>
+        <h5 id="e2">El cadaver de la Novia</h5>
+        <a href="https://pelisplus.me/pelicula/el-cadaver-de-la-novia/">
+        <button id="boton">Ver Pelicula</button>
+        </a>
+        </div>
+        <div id="cuadro">
+            <div class="item borde">
+            <img id="imga" src="./IMG/perro.jpg">
+            <h4 id="e1">Pelicula 3</h4>
+            <h5 id="e22">frankenweenie</h5>
+            <a href="https://pelisplus.me/pelicula/frankenweenie/">
+            <button id="boton1">Ver Pelicula</button>
+            </a>
+        </div>
+        </div>
+    </section>
+    <!--SECCIÓN CONTACTO-->
+    <section id="contacto">
+        <div class="minfo">
+            <img id="michi" src="./Img/michi.png" data-aos="flip-left">
+        </div>
+        <div class="infcon">
+            <p>salazararath52@gmail.com <br> 
+                Ocupación: Estudiante de Sistemas <br> 
+                Si quieres una pag web manda un dm a mi correo :)</p>
+        </div>
+    </section>
+    <!--CUADRO FINAL-->
+    <footer id="boo">
+        <!--<img class="gato" src="./IMG/gatito.jpg" alt="">-->
+        <h6>Halloween es la fiesta de los monstruos… entonces, es tu noche: ¡a disfrutar!</h6>
+    </footer>
+    <!--ANIMACIONES-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+    AOS.init();
+    var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+
+
+</html>

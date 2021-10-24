@@ -1,0 +1,234 @@
+:root{
+--main-color:rgb(255, 145, 2);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    font-family: 'Shadows Into Light', cursive;
+}
+h2{
+    font-family: 'Shadows Into Light', cursive;
+    /*font-family: 'Kalam', cursive;*/
+}
+h3,h5{
+    font-family: 'Shadows Into Light', cursive;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color:var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    z-index:4;
+}
+header #titulo{
+    margin-top: 0.5%;
+    margin-left: 5%;
+    width: 200px;
+    font-size: 1rem;
+}
+header nav{
+    margin-top: 1%;
+    margin-right: 5%;
+    width: 500px;
+}
+header #Menum{
+display: none;
+}
+header nav ul li{
+    margin-top: 1%;
+    margin-left: 7%;
+    padding: 3px;
+    float: left;
+    font-size: 1.2rem;
+    transition: 0.5s ease-in all;
+    list-style: none;
+}
+header nav ul li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+}
+header nav ul li:hover{
+    opacity: 0.8;
+    background-color: white;
+    border-radius: 5px;
+}
+header nav ul li a:hover{
+color: var(--main-color);
+}
+#main #sobre{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    z-index:2;
+}
+#main video{
+    min-width: 100%;
+    min-height: 100%;
+}
+#main #sobre h2{
+    margin-top: 200px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 6rem;
+}
+#main #sobre h3{
+    margin-top: 15%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+#Info .arañita, #witsi .patas{
+    float: left;
+    width: 50%;
+    text-align: justify;
+}
+#Info > h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'Kalam', cursive;
+}
+#Info > .patas > h4{
+    font-family: 'Kalam', cursive;
+    margin-top: 35px;
+    font-size: 3rem;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+#Info .arañita img{
+    margin-top: 0px;
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+#Info .patas p{
+    font-family: 'Kalam', cursive;
+    margin-top: 50px;
+    margin-right: 8%;
+}
+#etiqueta{
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2rem;
+}
+#cuadro .item{
+    width: 20%;
+    background-color: var(--main-color);
+    height: 350px;
+    float: left;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    margin-top: 30px;
+}
+.borde{
+    border-radius: 20%;
+}
+#imga{
+    width: 100%;
+    height: 180px;
+    border-radius: 20%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+#e1{
+    font-family: 'Kalam', cursive;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.6rem;
+
+}
+#e2{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.2rem;
+}
+#e22{
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.2rem;
+}
+#boton{
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color:rgb(247, 183, 101);
+    margin-top: 5%;
+    width: 40%;
+    height: 10%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#boton1{
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color:rgb(247, 183, 101);
+    margin-top: 14%;
+    width: 40%;
+    height: 10%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#cuadros .info2{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+#boo > h6{
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 1rem;
+    text-align: center;
+}
+#boo .gato{
+margin-top: 1%;
+width: 100%;
+height: 180px;
+background-image: url(../IMG/gatito.jpg);
+}
+#contacto .minfo, #michi .infcon{
+    margin-top: 5.4%;
+    float: left;
+    width: 50%;
+    text-align: justify;
+}
+#contacto .minfo img{
+    margin-top: 0px;
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+#contacto .infcon p{
+    font-family: 'Kalam', cursive;
+    padding-top: 50%;
+    text-align: center;
+    margin-top: 4%;
+    margin-right: 8%;
+}
+#boo{
+    background-image:url(../IMG/gatito.jpg);
+    height: 250px;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgb(226, 186, 55) ;
+    margin-top: 15%;
+}
+#boo > h6{
+ width: 50%;
+ margin-top: 10%;
+ margin-left: 28%;
+ margin-right: 20%;
+ text-align: center;
+}
