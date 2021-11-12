@@ -1,7 +1,19 @@
 window.onload=()=>{
  let usuario = JSON.parse(localStorage.getItem("usuario"));
- document.getElementById("imgUser").attributes.src="./img/"+usuario.imagen;
  let arrayTw=[];
+ document.getElementById("imgUser").attributes.src="./img/"+usuario.imagen;
+ var xobj= new XMLHttpRequest();
+ xobj.overrideMimeType("application/json");
+ xobj.open('GET','./js/tweets.json',true);
+ xobj.onreadystatechange=function(){
+     if(xobj.readyState==4 && xobj.status=='200'){
+         arrayTw=JSON.parse (xobj.responseText);
+         console.log(arrayTw);
+         crearPost();
+     }
+ }
+ xobj.send(null);
+ 
  //console.log(usuario);
  //document.getElementById("usuario").innerHTML="Hola"+usuario.nombre;
 let txtTweet=document.getElementById("txtTweet");
@@ -23,7 +35,7 @@ btnTweet.addEventListener('click',(evt)=>{
 txtTweet.addEventListener('keyup',(evt)=>{
 
 });
-function crearPost(datos){
+function crearPost(){
     console.log(arrayTw);
     var todo="";
 arrayTw.forEach(el=>{
