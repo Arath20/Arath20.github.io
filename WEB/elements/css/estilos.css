@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Phenomena;
+    src:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Phenomena-Regular.otf);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: Phenomena;
+    src:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Phenomena-Bold.otf);
+    font-weight: bold;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    padding: 0px;
+  }
+  body {
+    font-family: Phenomena, script;
+    margin: 5vw;
+    background: #111;
+    color: #000;
+    counter-reset: element;
+  }
+  .tabla-periodica {
+    display: grid;
+    grid-column-gap: .5vw;
+    grid-row-gap: .5vw;
+    padding-left: 0;
+  }
+  .tabla-periodica > li {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 4.5vw;
+    border-radius: 3px;
+    background: rgb(91, 194, 234);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .tabla-periodica > li:before {
+    counter-increment: element; 
+    content: counter(element);
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+    font-size: .9vw;
+    font-weight: lighter;
+  }
+  .tabla-periodica > li abbr {
+    font-size: 2.5vw;
+  }
+  #helium {
+    grid-column-start: 18;
+  }
+  #boron, #aluminium {
+    grid-column-start: 13;
+  }
+  #cerium, #thorium {
+    grid-column-start: 4;
+  }
+  .tabla-periodica > li:nth-child(n+58):nth-last-child(n+48) {
+    grid-row-start: 8;
+  }
+  .tabla-periodica > li:nth-child(n+90):nth-last-child(n+16) {
+    grid-row-start: 9;
+  }
+  .tabla-periodica:before {
+    display: block;
+    content: '';
+    grid-row: 8 / 10;
+    grid-column: 1 / 4;
+  }
+  .tabla-periodica .noble-gas {
+    background: rgb(234, 218, 36);
+  }
+  .tabla-periodica .diatomic-nonmetal {
+    background: rgb(234, 179, 127);
+  }
+  .tabla-periodica .alkali {
+    background: hsl(326, 52%, 84%);
+  }
+  .tabla-periodica .hydrogen {
+    background: rgb(163, 199, 210);  
+  }
+  .tabla-periodica .alkaline {
+    background: hsl(120, 52%, 84%);
+  }
+  .tabla-periodica .unknown {
+    background: hsl(210, 2%, 73%);
+  }
+  .tabla-periodica .lanthanide {
+    background: hsl(183, 54%, 84%);
+  }
+  .tabla-periodica .actinide {
+    background: hsl(82, 60%, 56%);  
+  }
+  .tabla-periodica .metalloid {
+    background: hsl(142, 60%, 56%);  
+  }
+  .tabla-periodica .polyatomic-non-metal {
+    background: hsl(358, 60%, 56%);  
+  }
+  #data{
+      position: absolute;
+      left: 300px;
+      top: 50px;
+      width: 500px;
+      height: 200px;
+      padding: 20px;
+      z-index: 2;
+      background-color: rgb(31, 31, 31);
+  }
+  #data h1, #data h2, #data p{
+      color:white;
+  }
+  @media all and (max-width: 1100px) {
+    #helium, #boron, #aluminium, #cerium, #thorium {
+    grid-column-start: auto;
+    }
+    .tabla-periodica {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tabla-periodica > li abbr {
+      font-size: 0;
+    }
+    .tabla-periodica > li {
+      padding: 1rem;
+    }
+    .tabla-periodica > li abbr:after {
+      content: attr(title);
+      font-size: 2rem;
+    }
+    .tabla-periodica > li:before {
+      font-size: 1rem;
+    }
+    .tabla-periodica > li:nth-child(n+58):nth-last-child(n+48) {
+    grid-row-start: auto !important;
+  }
+    .tabla-periodica > li:nth-child(n+90):nth-last-child(n+16) {
+      grid-row-start: auto !important;
+    }
+    .tabla-periodica:before {
+      display: none !important;
+    }
+  }
+  @media all and (max-width: 750px) {
+    body {
+      margin: 2vw;
+    }
+    .tabla-periodica {
+      grid-template-columns: 1fr 1fr;
+    }
+    .tabla-periodica > li {
+      height: auto;
+      font-size: 3vw;
+    }
+  }
+  @media all and (max-width: 550px) {
+    .tabla-periodica {
+      grid-template-columns: 1fr;
+    }
+  }

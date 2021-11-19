@@ -1,7 +1,7 @@
 window.onload=()=>{
  let usuario = JSON.parse(localStorage.getItem("usuario"));
- let arrayTw=[];
  document.getElementById("imgUser").attributes.src="./img/"+usuario.imagen;
+ let arrayTw=[];
  var xobj= new XMLHttpRequest();
  xobj.overrideMimeType("application/json");
  xobj.open('GET','./js/tweets.json',true);
