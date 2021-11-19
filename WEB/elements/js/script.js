@@ -8,7 +8,6 @@ window.onload =()=>{
     let periodic = document.getElementsByClassName("tabla-periodica");
     let data = document.getElementById('data');
     document.body.addEventListener('click', ()=>{
-       //data.style.display = 'none';
     }, true);
     xobj.overrideMimeType('application/json');
     xobj.open('GET','./js/PeriodicTableJSON.json',true);
@@ -74,7 +73,6 @@ window.onload =()=>{
 let elem = document.getElementsByTagName('li');
 for(let x=0;x<elem.length;x++){
     elem[x].addEventListener ('click',(e)=>{
-    //data.style.display = 'block';
     let name = elem[x].dataset.name;
     let sym = elem[x].dataset.sym;
     let desc = elem[x].dataset.desc;
